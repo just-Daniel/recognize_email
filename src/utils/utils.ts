@@ -18,7 +18,7 @@ export const readJSONFile = <T>(filePath: string): T => {
 export const writeJSONFile = (filePath: string, data: object): void => {
   try {
     fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8')
-    console.log('\x1b[32m', `Data successfully written to ${filePath}`, '\x1b[0m')
+    console.log('\x1b[32m', `✅ Data successfully written to ${filePath}`, '\x1b[0m')
   } catch (e) {
     console.error(`Error writing to the file at ${filePath}:`, e)
     throw new Error(`Failed to write to JSON file: ${filePath}`)
