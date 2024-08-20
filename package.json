@@ -1,0 +1,16 @@
+{
+  "name": "recognize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 'src/data/**/*' dist",
+    "start": "node dist/index.js"
+  },
+  "author": "Daniel",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.4.1",
+    "copyfiles": "^2.4.1"
+  }
+}
